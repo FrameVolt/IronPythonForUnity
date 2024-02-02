@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Mono.Posix</id>
+    <version>7.1.0-final.1.21458.1</version>
+    <title>POSIX interface for Mono, .NET and dotnetcore</title>
+    <authors>Microsoft</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>Icon.png</icon>
+    <projectUrl>https://github.com/mono/mono.posix</projectUrl>
+    <description>Provides functionality for managed code to access Posix/Unix features not accessible via BCL</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>posix unix mono macos osx linux</tags>
+    <serviceable>true</serviceable>
+    <repository type="git" url="https://github.com/mono/mono.posix" commit="58686c26e7f5b6234a87ccd05ca0448015933564" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Mono.Unix" version="7.1.0-final.1.21458.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Mono.Unix" version="7.1.0-final.1.21458.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="Mono.Unix" version="7.1.0-final.1.21458.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Mono.Unix" version="7.1.0-final.1.21458.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Mono.Unix" version="7.1.0-final.1.21458.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
